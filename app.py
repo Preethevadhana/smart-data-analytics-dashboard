@@ -475,8 +475,7 @@ with tab6:
     )
 
 else:
-
-st.info(  
+    st.info(  
     "👈 Upload a CSV file from the sidebar to begin."  
 )  
 
