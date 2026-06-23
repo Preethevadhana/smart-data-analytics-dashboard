@@ -5,7 +5,7 @@ import numpy as np
 import plotly.express as px
 from io import BytesIO
 
----------------- PAGE CONFIG ----------------
+#--------------- PAGE CONFIG ----------------
 
 st.set_page_config(
 page_title="Smart Data Analytics Dashboard",
@@ -13,7 +13,7 @@ layout="wide",
 initial_sidebar_state="expanded"
 )
 
----------------- CUSTOM CSS ----------------
+#--------------- CUSTOM CSS ----------------
 
 st.markdown("""
 
@@ -27,7 +27,7 @@ st.markdown("""
 }  
 </style>  """, unsafe_allow_html=True)
 
----------------- TITLE ----------------
+#--------------- TITLE ----------------
 
 st.title("📊 Smart Data Analytics Dashboard")
 st.markdown(
@@ -35,7 +35,7 @@ st.markdown(
 "Python, Pandas, NumPy, Plotly, and Streamlit."
 )
 
----------------- SIDEBAR ----------------
+#--------------- SIDEBAR ----------------
 
 with st.sidebar:
 st.header("📁 Upload Dataset")
@@ -56,7 +56,7 @@ drop_missing = st.checkbox("Drop Missing Values")
 st.markdown("---")  
 st.info("Supports any CSV dataset.")
 
----------------- MAIN ----------------
+#--------------- MAIN ----------------
 
 if uploaded_file is not None:
 
