@@ -473,47 +473,31 @@ with tab6:
         file_name="processed_data.xlsx",  
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"  
     )
+        )
+    else:
+        st.info(
+            "👆 Upload a CSV file from the sidebar to begin."
+        )
+        st.markdown(
+            """
+            **Features Included:**
+            - CSV Upload
+            - Dataset Preview
+            - Missing Value Analysis
+            - Correlation, Histogram, Bar, Pie charts
+            - Download cleaned dataset
+            """
+        )
 
-else:
-    st.info(  
-    "👈 Upload a CSV file from the sidebar to begin."  
-)  
-
-st.markdown(  
+ st.markdown(
     """
-
-Features Included
-
-✅ CSV Upload
-
-✅ Dataset Preview
-
-✅ Search Records
-
-✅ Missing Value Analysis
-
-✅ Remove Duplicates
-
-✅ Drop Missing Values
-
-✅ Descriptive Statistics
-
-✅ Correlation Heatmap
-
-✅ Histogram
-
-✅ Box Plot
-
-✅ Scatter Plot
-
-✅ Bar Chart
-
-✅ Pie Chart
-
-✅ CSV Download
-
-✅ Excel Download
-
-✅ Responsive Dashboard
-"""
+    **Features Included:**
+    ✅ CSV Upload
+    ✅ Dataset Preview  
+    ✅ Missing Value Analysis
+    ✅ Remove Duplicates
+    ✅ Drop Missing Values
+    ✅ Interactive Charts
+    ✅ Download CSV/Excel
+    """
 )
