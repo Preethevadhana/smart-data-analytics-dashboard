@@ -38,9 +38,9 @@ st.markdown(
 #--------------- SIDEBAR ----------------
 
 with st.sidebar:
-st.header("📁 Upload Dataset")
+    st.header("📁 Upload Dataset")
 
-uploaded_file = st.file_uploader(  
+    uploaded_file = st.file_uploader(  
     "Choose a CSV File",  
     type=["csv"]  
 )  
@@ -58,7 +58,8 @@ st.info("Supports any CSV dataset.")
 
 #--------------- MAIN ----------------
 
-if uploaded_file is not None:
+if 
+    uploaded_file is not None:
 
 try:  
     df = pd.read_csv(uploaded_file)  
