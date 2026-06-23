@@ -56,17 +56,14 @@ drop_missing = st.checkbox("Drop Missing Values")
 st.markdown("---")  
 st.info("Supports any CSV dataset.")
 
-#--------------- MAIN ----------------
+#-------------- MAIN --------------
+if uploaded_file is not None:
+    try:
+        df = pd.read_csv(uploaded_file)
+    except Exception as e:
+        st.error(f"Error reading CSV file: {e}")
+        st.stop()
 
-if 
-    uploaded_file is not None:
-
-try:  
-    df = pd.read_csv(uploaded_file)  
-
-except Exception as e:  
-    st.error(f"Error reading CSV file: {e}")  
-    st.stop()  
 
 # ---------- DATA CLEANING ----------  
 if remove_duplicates:  
